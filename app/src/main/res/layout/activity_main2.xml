@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ilerleme_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1/10"
+                    android:gravity="center"
+                    android:textColor="@color/text_rengi"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:textSize="30dp"/>
+
+                <RelativeLayout
+                    android:layout_width="275dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/bb_plan"
+                    android:id="@+id/soruContainer">
+
+                    <TextView
+                        android:id="@+id/soru_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="10"
+                        android:textSize="50dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/butonContainer">
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:text="Button" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Button" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Button" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Button" />
+                    </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

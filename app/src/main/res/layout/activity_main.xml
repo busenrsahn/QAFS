@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:background="#197">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- İlk CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="80dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Sayılar testi için tıklayın!"
+                    android:textColor="@color/text_rengi"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/sayilar" />
+
+                <ImageButton
+                    android:id="@+id/img1"
+                    android:onClick="testClick"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-80dp"
+                    android:backgroundTint="@color/white"
+                    android:translationX="40dp"
+                    card_view:srcCompat="@android:drawable/ic_menu_edit" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- İkinci CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="80dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Renkler testi için tıklayın!"
+                    android:textColor="@color/text_rengi"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/colors" />
+
+                <ImageButton
+                    android:id="@+id/img2"
+                    android:onClick="testClick"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-80dp"
+                    android:backgroundTint="@color/white"
+                    android:translationX="40dp"
+                    card_view:srcCompat="@android:drawable/ic_menu_edit"
+                />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Üçüncü CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="80dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Hayvanlar testi için tıklayın!"
+                    android:textColor="@color/text_rengi"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/animals" />
+
+                <ImageButton
+                    android:id="@+id/img3"
+                    android:onClick="testClick"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-80dp"
+                    android:backgroundTint="@color/white"
+                    android:translationX="40dp"
+                    card_view:srcCompat="@android:drawable/ic_menu_edit" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

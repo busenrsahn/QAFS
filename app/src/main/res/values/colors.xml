@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ana_ekran">#197</color>
+    <color name="text_rengi">#197</color>
+    <color name="buton_rengi">#F4C2C2</color>
+    <color name="yesil">#255</color>
+    <color name="colorPrimary">#180</color>
+</resources>
